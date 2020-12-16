@@ -1,0 +1,31 @@
+@import "/bootstrap/dist/css/bootstrap.css";
+
+html, body{
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    cursor: pointer;
+}
+
+.chatBox{
+    height: 100%;
+}
+
+#chatMessages{
+    height: 100%;
+    overflow: auto;
+}
+
+#mainBox{
+    height: 100vh;
+}
+
+.row{
+    margin: 0;
+}
+
+.dateTime{
+    font-size: 10px;
+}

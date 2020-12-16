@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/Chatrooms/style.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <title>Chat Room</title>
+</head>
+<body class="bg-dark">
+    <div class="container bodyCont">
+        <div id="mainBox" class="d-flex flex-column justify-content-center align-items-start">
+            <div class="container chatBox mt-5 mb-5">
+                <div id="chatMessages"></div>
+            </div>
+            <div class="container">
+                <input id="chatName" type="hidden" value="<%= data %>">
+                <div class="form-group">
+                    <textarea id="chatMsg" class="form-control" placeholder="Type message here..." aria-multiline="true" rows="5"></textarea>
+                    <br>
+                    <button id="cht" class="btn btn-danger ">Send<i class="fa fa-send pl-2"></i></button>
+                    <button id="clear" class="btn btn-danger">Clear <i class="fa fa-close pl-2"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.4/qs.js" integrity="sha512-53y53BQwxZvk4YGd9SkHPqI7nDwlIIFZ4D2BSJG08Co7y6O3YsWeRtO6trPtdoyqfTCTkTbCulNosIAI6E4UvQ==" crossorigin="anonymous"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/min.js"></script>
+    <script>
+        console.log("<%= data %>")
+    </script>
+</body>
+</html>
